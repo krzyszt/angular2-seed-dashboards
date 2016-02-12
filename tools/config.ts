@@ -67,7 +67,10 @@ export const DEV_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencie
   { src: 'angular2/bundles/angular2.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/router.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/http.js', inject: 'libs', dest: JS_DEST },
-  { src: 'bootstrap/dist/css/bootstrap.css', inject: true, dest: CSS_DEST }
+  { src: 'bootstrap/dist/css/bootstrap.css', inject: true, dest: CSS_DEST },
+  { src: 'font-awesome/css/font-awesome.min.css', inject: true, dest: CSS_DEST },
+  { src: 'highcharts/highcharts', inject: 'libs', dest: JS_DEST },
+  { src: 'd3/d3.min.js', inject: 'libs', dest: JS_DEST }
 ]);
 
 export const PROD_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencies([

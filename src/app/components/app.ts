@@ -7,6 +7,8 @@ import {
 import {HomeCmp} from '../../home/components/home';
 import {AboutCmp} from '../../about/components/about';
 import {NameList} from '../../shared/services/name_list';
+import {D3Dash} from '../../dashboard/components-d3/d3dash';
+import {HgDash} from '../../dashboard/components-highcharts/hgdash';
 
 @Component({
   selector: 'app',
@@ -18,6 +20,8 @@ import {NameList} from '../../shared/services/name_list';
 })
 @RouteConfig([
   { path: '/', component: HomeCmp, as: 'Home' },
-  { path: '/about', component: AboutCmp, as: 'About' }
+  { path: '/about', component: AboutCmp, as: 'About' },
+  { path: '/d3dash', component: D3Dash, as: 'D3Dash' },
+  { path: '/hgdash', component: HgDash, as: 'HgDash'}
 ])
 export class AppCmp {}

@@ -1,8 +1,17 @@
-<section class="sample-app-content">
+<section class="container sample-app-content">
   <nav>
-    <a [routerLink]="['/Home']">Home</a>
-    <a [routerLink]="['/About']">About</a>
+    <a [routerLink]="['/Home']">
+      <i class="fa fa-home"></i>
+      Home
+    </a>
+    <a [routerLink]="['HgDash']">
+      <i class="fa fa-diamond"></i>
+      Highcharts Dashboards
+    </a>
+    <a [routerLink]="['/D3Dash']">
+      <i class="fa fa-dashboard"></i>
+      D3 Dashboards
+    </a>
   </nav>
-
   <router-outlet></router-outlet>
 </section>
